@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stilo.css">
+    <title>Fones de Ouvidos</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Lojinha</a>
+
+        <ul class="navegação">
+            <li><a href="index.html">New</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'></i>
+            <div id="menu"><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="1.png" alt="">
+                    </div>
+                    <p class="descripcion">NIKE AIR 97</p>
+                    <span class="precio">$ 1.300</span>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="2.png" alt="">
+                    </div>
+                    <p class="descripcion" id>NIKE RUNNING TERRA </p>
+                    <span class="precio">$ 1.800</span>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="3.png" alt="">
+                    </div>
+                    <p class="descripcion">NIKE WINFLO 8
+                    </p>
+                    <span class="precio">$ 3.600</span>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="4.png" alt="">
+                    </div>
+                    <p class="descripcion">NIKE LOW-TOP</p>
+                    <span class="precio">$ 1.800</span>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="5.png" alt="">
+                    </div>
+                    <p class="descripcion">NIKE BLAZER 97</p>
+                    <span class="precio">$ 130</span>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="6.png" alt="">
+                    </div>
+                    <p class="descripcion">NIKE LEGEND ESENTIAL</p>
+                    <span class="precio">$ 2.000</span>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="7.png" alt="">
+                    </div>
+                    <p class="descripcion">NIKE AIR ZOOM</p>
+                    <span class="precio">$ 2.500</span>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="8.png" alt="">
+                    </div>
+                    <p class="descripcion">NIKE TERRA KING</p>
+                    <span class="precio">$ 1.800</span>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">NIKE MODEL 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">SIZE</label>
+                        <select name="" id="">
+                            <option value="">40</option>
+                            <option value="">42</option>
+                            <option value="">44</option>
+                            <option value="">46</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+            
+                
+</body>
+</html>
